@@ -8,6 +8,28 @@ const categoryInput = document.getElementById("toolCategory");
 const searchInput = document.getElementById("searchTools");
 
 const STORAGE_KEY = "devopsTools.v2";
+
+
+// Accept older PT-BR status/category values on import
+const PORTUGUESE_STATUS_MAP = {
+  "Concluido": "Comfortable",
+  "Em Progresso": "Used but not comfortable",
+  "Pendente": "Plan to learn",
+};
+
+nst PORTUGUESE_CATEGORY_MAP = {
+  "Controle de Versão e Colaboração": "Version Control & Collaboration",
+  "Sistemas Operacionais e Automação": "Operating Systems & Automation",
+  "Containers e Orquestração": "Containers & Orchestration",
+  "CI/CD e Automação de Deploy": "CI/CD & Deployment Automation",
+  "Cloud Providers": "Cloud Providers",
+  "Compliance e Segurança": "Compliance & Security",
+  "Monitoramento e Observabilidade": "Monitoring & Observability",
+  "Plataformas de Gerenciamento de Cluster": "Cluster Management Platforms",
+  "Volumes e Armazenamento": "Storage & Volumes",
+};
+
+const STATUS_ALLOWED = new Set(["Comfortable", "Used but not comfortable", "Plan to learn"]);
 let tools = [];
 
 let currentIndex = null;
@@ -141,6 +163,31 @@ function editTool(index) {
   openModal(index);
 }
 
+function normalizeImportedStatus(raw) {
+  const value = String(raw || "").trim();
+  if (!value) return "";
+
+  // PT-BR -> EN
+  if (PORTUGUESE_STATUS_MAP[value]) return PORTUGUESE_STATUS_MAP[value];
+
+  // Common variations
+  const lower = value.toLowerCase();
+  if (lower === "done" || lower === "completed" || lower === "concluido") return "Comfortable";
+  if (lower === "in progress" || lower === "em progresso") return "Used but not comfortable";
+  if (lower === "pending" || lower === "pendente" || lower === "planned") return "Plan to learn";
+
+  // Accept already-correct values
+  if (STATUS_ALLOWED.has(value)) return value;
+
+  return "";
+}
+
+function normalizeImportedCategory(raw) {
+  const value = String(raw || "").trim();
+  if (!value) return "";
+  return PORTUGUESE_CATEGORY_MAP[value] || value;
+}
+
 function importTools(event) {
   const file = event.target.files?.[0];
   if (!file) return;
@@ -159,8 +206,8 @@ function importTools(event) {
       const normalized = imported.map((t) => ({
         name: String(t.name || "").trim(),
         logo: String(t.logo || "").trim(),
-        status: String(t.status || "").trim(),
-        category: String(t.category || "").trim(),
+        status: normalizeImportedStatus(t.status),
+        category: normalizeImportedCategory(t.category),
       })).filter(t => t.name && t.status && t.category);
 
       if (normalized.length === 0) {
