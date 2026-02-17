@@ -1,254 +1,422 @@
 [
   {
     "name": "Git",
-    "logo": "https://www.svgrepo.com/show/303548/git-icon-logo.svg",
-    "status": "Comfortable",
-    "category": "Version Control & Collaboration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Git.svg",
+    "status": "Concluido",
+    "category": "Controle de Versão e Colaboração"
   },
   {
     "name": "Linux",
-    "logo": "https://www.svgrepo.com/show/448236/linux.svg",
-    "status": "Comfortable",
-    "category": "Operating Systems & Automation"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Linux.svg",
+    "status": "Concluido",
+    "category": "Sistemas Operacionais e Automação"
   },
   {
     "name": "Docker / Compose",
-    "logo": "https://cdn.worldvectorlogo.com/logos/docker.svg",
-    "status": "Comfortable",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Docker.svg",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "Kubernetes (CKAD)",
-    "logo": "https://www.svgrepo.com/show/448233/kubernetes.svg",
-    "status": "Used but not comfortable",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/KubernetesCKAD.svg",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "Kubernetes (CKA)",
-    "logo": "https://www.svgrepo.com/show/341977/kubernetes.svg",
-    "status": "Plan to learn",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/KubernetesCKA.svg",
+    "status": "Em Progresso",
+    "category": "Containers e Orquestração"
   },
   {
-    "name": "GitHub Actions",
-    "logo": "<svg fill=\"#0079fa\" width=\"99px\" height=\"99px\" viewBox=\"0 0 24 24\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#0079fa\" stroke-width=\"0.00024000000000000003\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><title>GitHub Actions icon</title><path d=\"M10.984 13.836a.5.5 0 0 1-.353-.146l-.745-.743a.5.5 0 1 1 .706-.708l.392.391 1.181-1.18a.5.5 0 0 1 .708.707l-1.535 1.533a.504.504 0 0 1-.354.146zm9.353-.147l1.534-1.532a.5.5 0 0 0-.707-.707l-1.181 1.18-.392-.391a.5.5 0 1 0-.706.708l.746.743a.497.497 0 0 0 .706-.001zM4.527 7.452l2.557-1.585A1 1 0 0 0 7.09 4.17L4.533 2.56A1 1 0 0 0 3 3.406v3.196a1.001 1.001 0 0 0 1.527.85zm2.03-2.436L4 6.602V3.406l2.557 1.61zM24 12.5c0 1.93-1.57 3.5-3.5 3.5a3.503 3.503 0 0 1-3.46-3h-2.08a3.503 3.503 0 0 1-3.46 3 3.502 3.502 0 0 1-3.46-3h-.558c-.972 0-1.85-.399-2.482-1.042V17c0 1.654 1.346 3 3 3h.04c.244-1.693 1.7-3 3.46-3 1.93 0 3.5 1.57 3.5 3.5S13.43 24 11.5 24a3.502 3.502 0 0 1-3.46-3H8c-2.206 0-4-1.794-4-4V9.899A5.008 5.008 0 0 1 0 5c0-2.757 2.243-5 5-5s5 2.243 5 5a5.005 5.005 0 0 1-4.952 4.998A2.482 2.482 0 0 0 7.482 12h.558c.244-1.693 1.7-3 3.46-3a3.502 3.502 0 0 1 3.46 3h2.08a3.503 3.503 0 0 1 3.46-3c1.93 0 3.5 1.57 3.5 3.5zm-15 8c0 1.378 1.122 2.5 2.5 2.5s2.5-1.122 2.5-2.5-1.122-2.5-2.5-2.5S9 19.122 9 20.5zM5 9c2.206 0 4-1.794 4-4S7.206 1 5 1 1 2.794 1 5s1.794 4 4 4zm9 3.5c0-1.378-1.122-2.5-2.5-2.5S9 11.122 9 12.5s1.122 2.5 2.5 2.5 2.5-1.122 2.5-2.5zm9 0c0-1.378-1.122-2.5-2.5-2.5S18 11.122 18 12.5s1.122 2.5 2.5 2.5 2.5-1.122 2.5-2.5zm-13 8a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0zm12 0c0 1.93-1.57 3.5-3.5 3.5a3.503 3.503 0 0 1-3.46-3.002c-.007.001-.013.005-.021.005l-.506.017h-.017a.5.5 0 0 1-.016-.999l.506-.017c.018-.002.035.006.052.007A3.503 3.503 0 0 1 20.5 17c1.93 0 3.5 1.57 3.5 3.5zm-1 0c0-1.378-1.122-2.5-2.5-2.5S18 19.122 18 20.5s1.122 2.5 2.5 2.5 2.5-1.122 2.5-2.5z\"></path></g></svg>",
-    "status": "Plan to learn",
-    "category": "Version Control & Collaboration"
+    "name": "Github Actions",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/GithubActions.svg",
+    "status": "Concluido",
+    "category": "CI/CD e Automação de Deploy"
   },
   {
     "name": "Bash / Shell Script",
-    "logo": "https://www.svgrepo.com/show/353478/bash-icon.svg",
-    "status": "Plan to learn",
-    "category": "Operating Systems & Automation"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/BashShell.png",
+    "status": "Concluido",
+    "category": "Sistemas Operacionais e Automação"
   },
   {
     "name": "Docker Swarm",
-    "logo": "<svg viewBox=\"0 0 15.00 15.00\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#009dff\" stroke-width=\"0.28500000000000003\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke=\"#CCCCCC\" stroke-width=\"0.03\"></g><g id=\"SVGRepo_iconCarrier\"> <path d=\"M0.5 5.5V5H0V5.5H0.5ZM2.5 3.5V3H2V3.5H2.5ZM6.5 1.5V1H6V1.5H6.5ZM8.5 1.5H9V1H8.5V1.5ZM12.5 7.5H12V8H12.5V7.5ZM1 7.5V5.5H0V7.5H1ZM3 7.5V3.5H2V7.5H3ZM2.5 4H8.5V3H2.5V4ZM8 3.5V7.5H9V3.5H8ZM5 7.5V3.5H4V7.5H5ZM7 7.5V1.5H6V7.5H7ZM6.5 2H8.5V1H6.5V2ZM8 1.5V3.5H9V1.5H8ZM13.7361 10H15V9H13.7361V10ZM10 5V5.5H11V5H10ZM12 6.5V7.5H13V6.5H12ZM12.5 8H13.5V7H12.5V8ZM14 8.5V9.5H15V8.5H14ZM13.5 8C13.7761 8 14 8.22386 14 8.5H15C15 7.67157 14.3284 7 13.5 7V8ZM11.5 6C11.7761 6 12 6.22386 12 6.5H13C13 5.67157 12.3284 5 11.5 5V6ZM3 10H4V9H3V10ZM8.5 7H0.5V8H8.5V7ZM0 7.5V8.5H1V7.5H0ZM5.5 14H6.02786V13H5.5V14ZM6.02786 14C8.51265 14 10.8164 12.8096 12.2585 10.8496L11.4531 10.257C10.1974 11.9636 8.19126 13 6.02786 13V14ZM0 8.5C0 11.5376 2.46243 14 5.5 14V13C3.01472 13 1 10.9853 1 8.5H0ZM0.5 6H11.5V5H0.5V6ZM10 5.5C10 6.32843 9.32843 7 8.5 7V8C9.88071 8 11 6.88071 11 5.5H10ZM13.7361 9C12.7762 9 11.9673 9.55817 11.4531 10.257L12.2585 10.8496C12.6423 10.3281 13.1808 10 13.7361 10V9Z\" fill=\"#000000\"></path> </g></svg>",
-    "status": "Plan to learn",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/DockerSwarm.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "K3S",
-    "logo": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><path d=\"M114.434 11.875H13.547C6.074 11.898.023 17.949 0 25.422v77.719c.023 7.472 6.074 13.523 13.547 13.546h100.887c7.472-.023 13.523-6.074 13.546-13.546V25.42c-.023-7.472-6.074-13.523-13.546-13.546zM54.078 88.094l-24.621 14.308a6.592 6.592 0 01-9.008-2.386 6.59 6.59 0 012.387-9.008l24.621-14.309a6.587 6.587 0 019.012 2.383 6.593 6.593 0 01-2.39 9.012zm9.688-21.801h-.032a6.59 6.59 0 01-6.558-6.617l.125-28.364a6.587 6.587 0 016.586-6.562h.031a6.59 6.59 0 016.559 6.617l-.125 28.367a6.588 6.588 0 01-6.586 6.559zm43.562 33.703a6.585 6.585 0 01-9 2.41L73.672 88.172a6.589 6.589 0 116.59-11.41l24.656 14.234a6.586 6.586 0 012.41 9zm0 0\" fill=\"#ffc519\"/></svg>",
-    "status": "Used but not comfortable",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/K3S.svg",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "minikube",
-    "logo": "https://avatars.githubusercontent.com/u/20374350?v=4",
-    "status": "Plan to learn",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/MiniKube.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "Longhorn",
-    "logo": "https://longhorn.io/img/logos/longhorn-icon-color.png",
-    "status": "Plan to learn",
-    "category": "Storage & Volumes"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/LongHorn.png",
+    "status": "Pendente",
+    "category": "Volumes e Armazenamento"
   },
   {
     "name": "Rancher",
-    "logo": "https://www.svgrepo.com/show/354256/rancher-icon.svg",
-    "status": "Plan to learn",
-    "category": "Cluster Management Platforms"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Rancher.svg",
+    "status": "Em Progresso",
+    "category": "Plataformas de Gerenciamento de Cluster"
   },
   {
     "name": "Portainer",
-    "logo": "https://icon.icepanel.io/Technology/svg/Portainer.svg",
-    "status": "Plan to learn",
-    "category": "Cluster Management Platforms"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Portainer.svg",
+    "status": "Concluido",
+    "category": "Plataformas de Gerenciamento de Cluster"
   },
   {
     "name": "Datadog",
-    "logo": "https://www.svgrepo.com/show/448219/datadog.svg",
-    "status": "Plan to learn",
-    "category": "Monitoring & Observability"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/DataDog.svg",
+    "status": "Em Progresso",
+    "category": "Monitoramento e Observabilidade"
   },
   {
     "name": "SonarQube",
-    "logo": "https://www.svgrepo.com/show/354365/sonarqube.svg",
-    "status": "Plan to learn",
-    "category": "Monitoring & Observability"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/SonarQube.webp",
+    "status": "Concluido",
+    "category": "Monitoramento e Observabilidade"
   },
   {
     "name": "AWS",
-    "logo": "https://www.svgrepo.com/show/448266/aws.svg",
-    "status": "Plan to learn",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/AWS.svg",
+    "status": "Concluido",
     "category": "Cloud Providers"
   },
   {
     "name": "Azure",
-    "logo": "https://www.svgrepo.com/show/373455/azure.svg",
-    "status": "Plan to learn",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Azure.svg",
+    "status": "Concluido",
     "category": "Cloud Providers"
   },
   {
     "name": "Openshift",
-    "logo": "https://www.svgrepo.com/show/354143/openshift.svg",
-    "status": "Plan to learn",
-    "category": "Cluster Management Platforms"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Openshift.svg",
+    "status": "Pendente",
+    "category": "Plataformas de Gerenciamento de Cluster"
   },
   {
     "name": "Ansible",
-    "logo": "https://www.svgrepo.com/show/349298/ansible.svg",
-    "status": "Plan to learn",
-    "category": "Operating Systems & Automation"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Ansible.svg",
+    "status": "Concluido",
+    "category": "Sistemas Operacionais e Automação"
   },
   {
     "name": "Terraform",
-    "logo": "https://www.svgrepo.com/show/354447/terraform-icon.svg",
-    "status": "Plan to learn",
-    "category": "Operating Systems & Automation"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Terraform.svg",
+    "status": "Concluido",
+    "category": "Sistemas Operacionais e Automação"
   },
   {
     "name": "Helm",
-    "logo": "https://www.svgrepo.com/show/448231/helm.svg",
-    "status": "Plan to learn",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Helm.svg",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "Prometheus",
-    "logo": "https://www.svgrepo.com/show/354219/prometheus.svg",
-    "status": "Plan to learn",
-    "category": "Monitoring & Observability"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Prometheus.svg",
+    "status": "Concluido",
+    "category": "Monitoramento e Observabilidade"
   },
   {
     "name": "Grafana",
-    "logo": "https://www.svgrepo.com/show/353829/grafana.svg",
-    "status": "Plan to learn",
-    "category": "Monitoring & Observability"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Grafana.svg",
+    "status": "Concluido",
+    "category": "Monitoramento e Observabilidade"
   },
   {
     "name": "Zabbix",
-    "logo": "https://images.icon-icons.com/2699/PNG/512/zabbix_logo_icon_167937.png",
-    "status": "Plan to learn",
-    "category": "Monitoring & Observability"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Zabbix.webp",
+    "status": "Em Progresso",
+    "category": "Monitoramento e Observabilidade"
   },
   {
     "name": "Confluence",
-    "logo": "https://www.svgrepo.com/show/373525/confluence.svg",
-    "status": "Plan to learn",
-    "category": "Version Control & Collaboration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Confluence.svg",
+    "status": "Concluido",
+    "category": "Controle de Versão e Colaboração"
   },
   {
     "name": "Jira",
-    "logo": "https://www.svgrepo.com/show/452241/jira.svg",
-    "status": "Comfortable",
-    "category": "Version Control & Collaboration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Jira.svg",
+    "status": "Concluido",
+    "category": "Controle de Versão e Colaboração"
   },
   {
     "name": "Azure Devops",
-    "logo": "https://www.svgrepo.com/show/448271/azure-devops.svg",
-    "status": "Plan to learn",
-    "category": "Version Control & Collaboration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/AzureDevops.svg",
+    "status": "Concluido",
+    "category": "Controle de Versão e Colaboração"
   },
   {
     "name": "OpenTelemetry",
-    "logo": "https://images.seeklogo.com/logo-png/43/2/opentelemetry-logo-png_seeklogo-430977.png",
-    "status": "Plan to learn",
-    "category": "Monitoring & Observability"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/OpenTelemetry.png",
+    "status": "Concluido",
+    "category": "Monitoramento e Observabilidade"
   },
   {
     "name": "Jenkins",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png",
-    "status": "Plan to learn",
-    "category": "CI/CD & Deployment Automation"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Jenkins.png",
+    "status": "Pendente",
+    "category": "CI/CD e Automação de Deploy"
   },
   {
     "name": "Loki",
     "logo": "https://files.readme.io/e5e1b43-grafana-loki.png",
-    "status": "Plan to learn",
-    "category": "Monitoring & Observability"
+    "status": "Concluido",
+    "category": "Monitoramento e Observabilidade"
   },
   {
     "name": "Jaeger",
-    "logo": "https://cdn.prod.website-files.com/61e1d8dcf4a5e16aab73f6b4/6436e5b8fe5853f767c5a09a_a8yT7ufF-UQoyPgzgwSWyZXpaIrCaD_HwLL7wqBC3lp_DuVBM_34ZEnzKoGB2uSPI-zo1Hb1yLcN44IV8h7TKQlWBxbktSv3S_5r8eHEwpGeomDGUgJM4CQ0LkkxzwUvkviZS3mB-JAxmGRScBqe65w.png",
-    "status": "Plan to learn",
-    "category": "Monitoring & Observability"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Jaeger.png",
+    "status": "Concluido",
+    "category": "Monitoramento e Observabilidade"
   },
   {
     "name": "ArgoCD",
-    "logo": "https://tech.cloudmt.co.kr/2023/02/27/juunini-why-argo/images/argo.webp",
-    "status": "Plan to learn",
-    "category": "CI/CD & Deployment Automation"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/ArgoCD.png",
+    "status": "Em Progresso",
+    "category": "CI/CD e Automação de Deploy"
   },
   {
     "name": "Kubeadm",
-    "logo": "https://raw.githubusercontent.com/kubernetes/kubeadm/master/logos/stacked/color/kubeadm-stacked-color.png",
-    "status": "Plan to learn",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Kubeadm.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "Kubespray",
-    "logo": "https://kubespray.io/logo/logo-clear.png",
-    "status": "Plan to learn",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/KubeSpray.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "Kind",
-    "logo": "https://kind.sigs.k8s.io/logo/logo.png",
-    "status": "Plan to learn",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Kind.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "K3D",
-    "logo": "https://avatars.githubusercontent.com/u/98918160?s=280&v=4",
-    "status": "Used but not comfortable",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/K3D.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
   },
   {
     "name": "RKE",
-    "logo": "https://miro.medium.com/v2/resize:fit:465/0*LSXUBR7GvItBlQDB.png",
-    "status": "Plan to learn",
-    "category": "Cluster Management Platforms"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/RKE.png",
+    "status": "Pendente",
+    "category": "Plataformas de Gerenciamento de Cluster"
   },
   {
     "name": "OKE",
-    "logo": "https://miro.medium.com/v2/resize:fit:625/1*2nesJc8VJMs9Q0m3on5q0w.png",
-    "status": "Plan to learn",
-    "category": "Cluster Management Platforms"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/OKE.png",
+    "status": "Pendente",
+    "category": "Plataformas de Gerenciamento de Cluster"
   },
   {
     "name": "AKS",
-    "logo": "https://www.densify.com/wp-content/uploads/icon-microsoft-azure-aks.svg",
-    "status": "Plan to learn",
-    "category": "Cluster Management Platforms"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/AKS.svg",
+    "status": "Concluido",
+    "category": "Plataformas de Gerenciamento de Cluster"
   },
   {
     "name": "EKS",
-    "logo": "https://www.densify.com/wp-content/uploads/icon-aws-amazon-eks.svg",
-    "status": "Plan to learn",
-    "category": "Cluster Management Platforms"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/EKS.svg",
+    "status": "Concluido",
+    "category": "Plataformas de Gerenciamento de Cluster"
   },
   {
     "name": "GKE",
-    "logo": "https://www.densify.com/wp-content/uploads/icon-google-cloud-gke.svg",
-    "status": "Plan to learn",
-    "category": "Cluster Management Platforms"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/GKE.svg",
+    "status": "Pendente",
+    "category": "Plataformas de Gerenciamento de Cluster"
   },
   {
     "name": "Microk8s",
-    "logo": "https://i.vimeocdn.com/video/1425374674-7ce8c97537cc9fa7543c8959186d07a193e3256ba8bc2a2c9032f047585aaf83-d?f=webp",
-    "status": "Plan to learn",
-    "category": "Containers & Orchestration"
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/MicroK8S.webp",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Docker Scout",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/DockerScout.png",
+    "status": "Concluido",
+    "category": "Compliance e Segurança"
+  },
+  {
+    "name": "Trivy",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Trivy.png",
+    "status": "Concluido",
+    "category": "Compliance e Segurança"
+  },
+  {
+    "name": "Cosign",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Cosign.png",
+    "status": "Concluido",
+    "category": "Compliance e Segurança"
+  },
+  {
+    "name": "Digital Ocean",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/DigitalOcean.png",
+    "status": "Concluido",
+    "category": "Cloud Providers"
+  },
+  {
+    "name": "ContainerD",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/ContainerD.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "LXD",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/LXD.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "LXC",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/LXC.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Weave Net (CNI)",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/WeaveNet.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Flannel (CNI)",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Flannel.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Calico (CNI)",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Calico.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "DOKS",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/DOKS.png",
+    "status": "Concluido",
+    "category": "Plataformas de Gerenciamento de Cluster"
+  },
+  {
+    "name": "Fluentbit",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Fluentbit.svg",
+    "status": "Em Progresso",
+    "category": "Monitoramento e Observabilidade"
+  },
+  {
+    "name": "Hadolint",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Hadolint.png",
+    "status": "Concluido",
+    "category": "Compliance e Segurança"
+  },
+  {
+    "name": "Istio",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Istio.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Traefik",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Traefik.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "NGINX Ingress Controller",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/NGINX.svg",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Emissary",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Emissary.png",
+    "status": "Em Progresso",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Google Cloud",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/GoogleCloud.png",
+    "status": "Pendente",
+    "category": "Cloud Providers"
+  },
+  {
+    "name": "Kubectx & Kubens",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/KubeCTXKubeNS.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Tetragon",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Tetragon.png",
+    "status": "Concluido",
+    "category": "Compliance e Segurança"
+  },
+  {
+    "name": "Cilium",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Cilium.png",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Hubble",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Hubble.png",
+    "status": "Concluido",
+    "category": "Monitoramento e Observabilidade"
+  },
+  {
+    "name": "Krew (Plugin Manager)",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/781603239067ac316e162b15cbc5cd04b7881092/ToolsImages/Krew.svg",
+    "status": "Concluido",
+    "category": "Containers e Orquestração"
+  },
+  {
+    "name": "Snyk",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Snyk.png",
+    "status": "Pendente",
+    "category": "Compliance e Segurança"
+  },
+  {
+    "name": "CheckMarx",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/CheckMarx.png",
+    "status": "Pendente",
+    "category": "Compliance e Segurança"
+  },
+  {
+    "name": "Veracode",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/Veracode.png",
+    "status": "Pendente",
+    "category": "Compliance e Segurança"
+  },
+  {
+    "name": "OpenText",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/OpenText.jpg",
+    "status": "Pendente",
+    "category": "Compliance e Segurança"
+  },
+  {
+    "name": "BlackDuck",
+    "logo": "https://raw.githubusercontent.com/LucasGLGoncalves/tools-learning-progress/refs/heads/main/ToolsImages/BlackDuck.jpeg",
+    "status": "Pendente",
+    "category": "Compliance e Segurança"
   }
 ]
