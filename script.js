@@ -1,13 +1,11 @@
 // DevOps Tooling Portfolio (GitHub Pages friendly)
-// Data persistence: browser localStorage. No server writes needed.
+// Static data: bundled seed-tools.js. No JSON upload and no persistence.
 
 const dashboard = document.getElementById("dashboard");
 const searchInput = document.getElementById("searchInput");
 const statusFilters = document.getElementById("statusFilters");
 const summaryLine = document.getElementById("summaryLine");
 
-const STORAGE_KEY = "devopsTools.v3";
-const STORAGE_META_KEY = "devopsTools.meta.v3";
 
 if (typeof DEFAULT_TOOLS === "undefined") {
   document.body.innerHTML = `
@@ -21,23 +19,6 @@ if (typeof DEFAULT_TOOLS === "undefined") {
 }
 
 
-function loadTools() {
-  const raw = localStorage.getItem(STORAGE_KEY);
-  if (raw) {
-    try { return JSON.parse(raw); } catch (_) {}
-  }
-  // First run: seed from DEFAULT_TOOLS
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_TOOLS));
-  localStorage.setItem(STORAGE_META_KEY, JSON.stringify({
-    seededAt: new Date().toISOString(),
-    version: "v2"
-  }));
-  return DEFAULT_TOOLS;
-}
-
-function saveTools(tools) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(tools));
-}
 
 function normalize(s) {
   return String(s || "").toLowerCase();
@@ -48,7 +29,7 @@ function getStatusList() {
   return ["Comfortable", "Used but not comfortable", "Plan to learn"];
 }
 
-let tools = loadTools();
+let tools = JSON.parse(JSON.stringify(DEFAULT_TOOLS));
 let activeStatus = "All";
 
 function renderStatusFilters() {
@@ -161,9 +142,6 @@ function getFilteredTools() {
 }
 
 function renderAll() {
-  // reload from storage to reflect editor changes
-  tools = loadTools();
-
   renderStatusFilters();
   const filtered = getFilteredTools();
   renderSummary(filtered);

@@ -1,5 +1,5 @@
 /* Auto-generated seed data for the DevOps Tooling Portfolio.
-   Source: tools.seed.json (Portuguese) converted to English for GitHub Pages.
+   Bundled seed list (70 tools) for GitHub Pages.
    Status mapping:
    - Concluido -> Comfortable
    - Em Progresso -> Used but not comfortable

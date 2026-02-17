@@ -1,15 +1,18 @@
+## Static GitHub Pages mode
+
+This version is **100% static**: it loads the 70 tools from `seed-tools.js` and does **not** require importing/uploading any JSON or saving anything in the browser.
+
+To update statuses, edit `seed-tools.js` and change the `status` field for each tool.
+
+
 # 🧰 DevOps Tooling Portfolio (GitHub Pages)
 
 A lightweight, **static** web app to showcase your DevOps tooling experience as a portfolio.
 
-It is **local-first**:
+It is **static**:
 - The app ships as plain HTML/CSS/JS
-- Your edits are saved in your browser using **localStorage**
-- You can **export/import JSON** at any time for backups or migration
-
-> Why not persist to a JSON file on GitHub Pages?  
-> GitHub Pages is static hosting: it can **serve** files, but it cannot **write** or **save** changes back to the repo from the browser.  
-> So persistence is handled client-side (localStorage), and export/import is used for portability.
+- The 70 tools are bundled in `seed-tools.js`
+- No JSON upload/import is required and nothing is saved in the browser
 
 ---
 
@@ -33,42 +36,6 @@ Open `index.html` in your browser.
 
 ---
 
-## ✏️ Edit and manage tools
+## ✏️ Update the list or statuses
 
-Open `editor.html`:
-- Add, edit, delete tools
-- Import JSON (adds tools to your current list)
-- Export JSON (downloads your current list)
-- Reset to defaults (overwrite your list with the seeded data)
-
----
-
-## 🌍 Deploy to GitHub Pages via GitHub Actions
-
-This repo includes a ready-to-use workflow:
-
-- `.github/workflows/deploy.yml`
-
-### Steps
-
-1. Push the project to a GitHub repository
-2. In your repo: **Settings → Pages**
-3. Under **Build and deployment**, set **Source** to **GitHub Actions**
-4. Push to the `main` branch (or run the workflow manually)
-
-After the workflow finishes, your site will be published.
-
----
-
-## 🧩 Seed data
-
-- `seed-tools.js` contains `DEFAULT_TOOLS` and the status emojis/labels.
-- `tools.seed.json` is included as a readable copy of the default data (the app does not need it).
-
----
-
-## Tech stack
-
-- HTML + TailwindCSS (CDN)
-- Vanilla JavaScript
-- localStorage
+Edit `seed-tools.js` and change the fields you want (for example, the `status`). Commit and push, and GitHub Pages will reflect the new values.
