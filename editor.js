@@ -12,11 +12,70 @@ let tools = [];
 
 let currentIndex = null;
 
+function normalizeStatus(status) {
+  const s = (status || "").trim();
+  const map = {
+    "Concluido": "Comfortable",
+    "Concluído": "Comfortable",
+    "Em Progresso": "Used but not comfortable",
+    "Em progresso": "Used but not comfortable",
+    "Pendente": "Plan to learn"
+  };
+  if (map[s]) return map[s];
+  const allowed = new Set(["Comfortable", "Used but not comfortable", "Plan to learn"]);
+  if (allowed.has(s)) return s;
+  return s || "Plan to learn";
+}
+
+function normalizeKey(name) {
+  return (name || "").trim().toLowerCase();
+}
+
 function loadTools() {
   const raw = localStorage.getItem(STORAGE_KEY);
+  let stored = null;
+
   if (raw) {
-    try { return JSON.parse(raw); } catch (_) {}
+    try {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) stored = parsed;
+    } catch (_) {}
   }
+
+  if (stored) {
+    let changed = false;
+
+    stored = stored.map((t) => {
+      const name = (t?.name || "").trim();
+      const status = normalizeStatus(t?.status);
+      const logo = t?.logo || "";
+      const category = t?.category || "";
+      if (status !== t?.status || name !== t?.name) changed = true;
+      return { ...t, name, status, logo, category };
+    });
+
+    const byName = new Map(stored.map((t) => [normalizeKey(t.name), t]));
+
+    for (const def of DEFAULT_TOOLS) {
+      const key = normalizeKey(def.name);
+      const existing = byName.get(key);
+
+      if (!existing) {
+        stored.push(def);
+        byName.set(key, def);
+        changed = true;
+        continue;
+      }
+
+      if (!existing.logo && def.logo) { existing.logo = def.logo; changed = true; }
+      if (!existing.category && def.category) { existing.category = def.category; changed = true; }
+      if (!existing.status) { existing.status = def.status; changed = true; }
+    }
+
+    if (changed) localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+    return stored;
+  }
+
   localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_TOOLS));
   return DEFAULT_TOOLS;
 }

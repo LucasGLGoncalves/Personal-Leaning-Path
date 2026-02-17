@@ -9,16 +9,89 @@ const summaryLine = document.getElementById("summaryLine");
 const STORAGE_KEY = "devopsTools.v2";
 const STORAGE_META_KEY = "devopsTools.meta.v2";
 
+function normalizeStatus(status) {
+  const s = (status || "").trim();
+  const map = {
+    "Concluido": "Comfortable",
+    "Concluído": "Comfortable",
+    "Em Progresso": "Used but not comfortable",
+    "Em progresso": "Used but not comfortable",
+    "Pendente": "Plan to learn"
+  };
+  if (map[s]) return map[s];
+  // Accept already-normalized English labels
+  const allowed = new Set(["Comfortable", "Used but not comfortable", "Plan to learn"]);
+  if (allowed.has(s)) return s;
+  return s || "Plan to learn";
+}
+
+function normalizeKey(name) {
+  return (name || "").trim().toLowerCase();
+}
+
 function loadTools() {
   const raw = localStorage.getItem(STORAGE_KEY);
+  let stored = null;
+
   if (raw) {
-    try { return JSON.parse(raw); } catch (_) {}
+    try {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) stored = parsed;
+    } catch (_) {}
   }
-  // First run: seed from DEFAULT_TOOLS
+
+  // If we already have data, keep it — but ensure it's up-to-date with the current defaults.
+  if (stored) {
+    let changed = false;
+
+    // Normalize stored items
+    stored = stored.map((t) => {
+      const name = (t?.name || "").trim();
+      const status = normalizeStatus(t?.status);
+      const logo = t?.logo || "";
+      const category = t?.category || "";
+      if (status !== t?.status || name !== t?.name) changed = true;
+      return { ...t, name, status, logo, category };
+    });
+
+    const byName = new Map(stored.map((t) => [normalizeKey(t.name), t]));
+
+    // Merge any missing default tools into storage
+    for (const def of DEFAULT_TOOLS) {
+      const key = normalizeKey(def.name);
+      const existing = byName.get(key);
+
+      if (!existing) {
+        stored.push(def);
+        byName.set(key, def);
+        changed = true;
+        continue;
+      }
+
+      // Backfill missing fields from defaults (but keep user's status)
+      if (!existing.logo && def.logo) { existing.logo = def.logo; changed = true; }
+      if (!existing.category && def.category) { existing.category = def.category; changed = true; }
+      if (!existing.status) { existing.status = def.status; changed = true; }
+    }
+
+    if (changed) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+      localStorage.setItem(STORAGE_META_KEY, JSON.stringify({
+        updatedAt: new Date().toISOString(),
+        version: "v2",
+        defaultsCount: DEFAULT_TOOLS.length
+      }));
+    }
+
+    return stored;
+  }
+
+  // First run: seed from DEFAULT_TOOLS (full list)
   localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_TOOLS));
   localStorage.setItem(STORAGE_META_KEY, JSON.stringify({
     seededAt: new Date().toISOString(),
-    version: "v2"
+    version: "v2",
+    defaultsCount: DEFAULT_TOOLS.length
   }));
   return DEFAULT_TOOLS;
 }
